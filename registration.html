@@ -35,13 +35,11 @@
   <body>
 
   <div class="container">
-
 		<div class="header clearfix">
-        <h3 class="text-muted">Сибирский лес групп представляет</h3>
-      </div>				
-
- 		<div class="row add-margin">	
-			<div class="col-lg-4 col-md-4 pull-left">
+       		<h3 class="text-muted">Сибирский лес групп представляет</h3>
+        </div>	
+ 		<div class="row ">	
+			<div class="col-lg-4 col-md-4 add-margin pull-left">
 				<div class="input-group">
 					<input type="text" class="form-control" placeholder="Search for...">
 					<span class="input-group-btn">
@@ -50,17 +48,17 @@
 				</div><!-- /input-group -->
 			</div><!-- /.col-lg-6 -->
 			<form class="col-lg-4 col-lg-push-5" role="form">
-			  <div class="form-inline add-margin">
-				  <div class="form-group" >
+			  <div class="form-inline">
+				  <div class="form-group add-margin" >
 					 <label class="sr-only" for="exampleInputEmail2">Email</label>
 					 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Введите email">
 				  </div>
-				  <div class="form-group">
+				  <div class="form-group add-margin">
 					 <label class="sr-only" for="exampleInputPassword2">Password</label>
 					 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Пароль">
 				  </div>
 			  </div>
-			  <div class="form-inline">
+			  <div class="form-inline add-margin">
 				  <div class="checkbox ">
 					 <label>
 						<input type="checkbox"> Запомнить
@@ -69,10 +67,10 @@
 					<button type="submit" class="btn  btn-info " >Войти</button>
 			  </div>
 			</form>
-		</div><!-- /.row -->		
+		</div><!-- /.row -->			
 
 		
-      <div class="jumbotron">
+        <div class="jumbotron">
 			<div class="row">
 				<div class="col-lg-8 pull-left">
 					<h1>СПРОСИ БЕЛКУ</h1>
@@ -84,24 +82,65 @@
 
 
 		<div class="row">
-			<div class="col-lg-9">
-				 
-			</div>
+			<div class="col-lg-9 pull-left"> 
+			
+				<form class="form-signin col-lg-5 col-lg-push-4">
+					<h2 class="form-signin-heading">Registration</h2>
+					
+					<label for="inputName" class="sr-only">Name</label>
+					<input type="password" id="inputName" class="form-control  add-margin" placeholder="Name" required>
+					<label for="inputEmail" class="sr-only ">Login</label>
+					<input type="login" id="inputLogin" class="form-control  add-margin" placeholder="Login" required autofocus>
+					
+					<label for="inputEmail" class="sr-only ">Email address</label>
+					<input type="email" id="inputEmail" class="form-control  add-margin" placeholder="Email address" required autofocus>
 
+					<label for="inputPassword" class="sr-only">Password</label>
+					<input type="password" id="inputPassword" class="form-control  add-margin" placeholder="Password" required>
+					<label for="inputRepeatPassword" class="sr-only">Repeat Password</label>
+					<input type="password" id="inputRepeatPassword" class="form-control  add-margin" placeholder="RepeatPassword" required>
+					
+					<button class="btn btn-lg btn-primary btn-block" type="submit">OK</button>
+				</form>
+
+			</div>
+			
 			<div class="col-lg-3">
+				<h3> Основные метки </h3>
 				<!-- Primary tags input -->
 				<div class="tagsinput-primary">
 					<input name="tagsinput" class="tagsinput" data-role="tagsinput" value="Грызун, Орех" />
 				</div>
 			</div>
-      </div>
+        </div>
+
+		<div class="pagination">
+		 	<ul>
+			    <li class="previous">
+			      <a href="#" class="fui-arrow-left"></a>
+			    </li>
+			    <!-- Make dropdown appear above pagination -->
+			    <li class="pagination-dropdown dropup">
+			      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			    	<i class="fui-triangle-up"></i>
+			      </a>
+			      <!-- Dropdown menu -->
+			      <ul class="dropdown-menu">
+			        <li>
+			          <a href="#">10-20</a>
+			        </li>
+			      </ul>
+			    </li>
+			    <li class="next">
+			      <a href="#" class="fui-arrow-right"></a>
+			    </li>
+			</ul>
+		</div>
 
 
-
-
-      <footer class="footer">
-        <p>&copy; Squirrel</p>
-      </footer>
+	    <footer class="footer">
+	    	<p>&copy; Squirrel</p>
+	    </footer>
 
     </div> <!-- /container -->
 
